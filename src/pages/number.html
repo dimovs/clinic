@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+	  <meta charset="utf-8">
+	  <title>Title</title>
+	</head>
+	<body>
+		<header class="page-header">
+			<div class="page-header__top">
+				<div class="page-header__inner">
+					<div class="page-header__container">
+						<p class="page-header__info">
+							Городская клиническая поликлиника №2&ensp;ул. Братьев Игнатовых, д. 3. Регистратура: 221-82-82
+						</p>
+						<p class="page-header__date">
+							чт, 23 августа, 11:26
+						</p>
+					</div>
+				</div>
+			</div>
+				
+			<nav class="nav page-header__nav">
+				<a class="nav__link nav__link--back" href="#">Назад</a>
+				<a class="nav__link nav__link--exit" href="#">Выход</a>
+			</nav>
+		</header>
+		<main class="page-main page-main--bright-bg">
+			<div class="page-main__inner">
+				<form class="form" id="document" method="GET" action="#">
+					<div class="form__display">
+						<h1 class="page-heading page-heading--form">Введите номер полиса ОМС</h1>
+						<div class="form__container">
+							<input class="form__input" name="first_part" type="text" maxlength="8" autofocus required>
+							<input class="form__input" name="second_part" type="text" maxlength="8" required>
+						</div>
+						<img class="form__image" src="../img/document-number.png" width="345" alt="Место расположения регистрационного номера полиса ОМС">
+					</div>
+					<div class="digit form__digit">
+						<ul class="digit__list">
+							<li class="digit__item">
+								<button class="digit__btn" type="button" value="1">1</button>
+							</li>
+							<li class="digit__item">
+								<button class="digit__btn" type="button" value="2">2</button>
+							</li>
+							<li class="digit__item">
+								<button class="digit__btn" type="button" value="3">3</button>
+							</li>
+							<li class="digit__item">
+								<button class="digit__btn" type="button" value="4">4</button>
+							</li>
+							<li class="digit__item">
+								<button class="digit__btn" type="button" value="5">5</button>
+							</li>
+							<li class="digit__item">
+								<button class="digit__btn" type="button" value="6">6</button>
+							</li>
+							<li class="digit__item">
+								<button class="digit__btn" type="button" value="7">7</button>
+							</li>
+							<li class="digit__item">
+								<button class="digit__btn" type="button" value="8">8</button>
+							</li>
+							<li class="digit__item">
+								<button class="digit__btn" type="button" value="9">9</button>
+							</li>
+							<li class="digit__item">
+								<button class="digit__btn" type="button" value="0">0</button>
+							</li>							
+							<li class="digit__item digit__item--delete">
+								<button class="digit__btn digit__btn--delete" type="button" value="del">Удалить</button>
+							</li>
+						</ul>
+					</div>
+				</form>
+		</main>
+		<footer class="page-footer page-footer--number">
+			<div class="page-footer__inner">
+				<button class="form__btn" type="submit" form="document" disabled>Далее</button>
+			</div>
+		</footer>
+	</body>
+</html>
