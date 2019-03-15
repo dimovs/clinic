@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Mono'), local('PTMono-Regular'),
+       url('../fonts/ptmonoregular.woff2') format('woff2'),
+       url('../fonts/ptmonoregular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('../fonts/robotolight.woff2') format('woff2'),
+       url('../fonts/robotolight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/robotoregular.woff2') format('woff2'),
+       url('../fonts/robotoregular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('../fonts/robotomedium.woff2') format('woff2'),
+       url('../fonts/robotomedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'),
+        url('../fonts/robotomediumitalic.woff2') format('woff2'),
+        url('../fonts/robotomediumitalic.woff') format('woff');
+}

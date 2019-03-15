@@ -1,0 +1,178 @@
+.calendar {
+	padding-left: 30px;
+	padding-right: 28px;
+	padding-top: 40px;
+	margin-bottom: 17px;
+}
+
+.calendar__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.calendar__next {
+	flex-shrink: 0;
+	width: 100px;
+	height: 100px;
+	margin-left: 2px;
+}
+
+.calendar__next {
+	position: relative;
+	background-color: #00bfa5;
+	text-indent: -10000px;
+}
+
+.calendar__next::before {
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	left: calc(50% - 10px);
+	top: calc(50% - 10px);
+	border: 3.5px solid #ffffff;
+	border-top: none;
+	border-right: none;
+	transform: rotate(-135deg);
+}
+
+.calendar__list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-grow: 1;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+.calendar__date {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	padding-top: 8px;
+	width: 100px;
+	height: 100px;
+	font-size: 14px;
+	line-height: 1;
+	font-weight: 400;
+	color: #004b53;
+	text-align: center;
+	background-color: #64ffda;
+
+	&--current {
+		position: relative;
+		background-color: #ffeb3b;
+		outline: 2px solid #004b53;
+
+		&::before {
+			content: "Сегодня";
+			position: absolute;
+			width: 100%;
+			left: 0;
+			top: -26px;
+			font-size: 16px;
+			color: #ffffff;
+			line-height: 1.2;
+			font-weight: 400;			
+			text-align: center;
+			text-transform: lowercase;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			background-color: #ffeb3b;
+			border-left: 2px solid #004b53;
+			border-bottom: 2px solid #004b53;
+			transform: rotate(-45deg);
+			bottom: -9px;
+			left: calc(50% - 9px);
+		}
+	}
+
+	&--unavailable {
+		background-color: #ffccbc;
+		color: rgba(28, 50, 56, 0.26);
+	}
+}
+
+.calendar__day {
+	width: 100%;
+}
+
+.calendar__number {
+	width: 100%;
+	margin-top: 3px;
+	font-size: 48px;
+	font-weight: 500;
+}
+
+.calendar__month {
+	width: 100%;
+}
+
+.calendar__info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-left: 6px;
+	padding-right: 9px;
+}
+
+.calendar__fulldate {
+	max-width: 50%;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 34px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #ffffff;
+	text-align: left;
+}
+
+.calendar__notice {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 0;
+	max-width: 50%;
+	padding-left: 40px;
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: 500;
+	color: #ffeb3b;
+
+	&::before {
+		content: "";
+		position: absolute;
+		background-color: #ffeb3b;
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		left: 0;
+		top: -3.5px;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 3px;
+		height: 12px;
+		left: 11px;
+		top: 3px;
+		background-image: linear-gradient(180deg, #000000 66.66%, #ffeb3b 66.66%, #ffeb3b 75%, #000000 75%);
+	}
+}
+
+.calendar__note {
+	color: #ffffff;
+	font-style: italic;
+	font-weight: 400;
+}

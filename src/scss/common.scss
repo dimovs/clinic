@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+	margin: 0;
+	font-family: Roboto, sans-serif;
+	background-image: linear-gradient(180deg, #00808d 36.67%, #007c71);
+	background-attachment: fixed;
+}

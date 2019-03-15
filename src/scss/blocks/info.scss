@@ -1,0 +1,40 @@
+.info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-grow: 1;
+	padding-left: 35px;
+	padding-right: 25px;
+	align-items: flex-start;
+}
+
+.info__user {
+	max-width: 300px;
+	padding-left: 45px;
+	background-image: url("../img/icon-user.svg");
+	background-repeat: no-repeat;
+	background-position: left 0 center;
+	background-size: 24px 24px;
+	color: #ffffff;
+	font-size: 21px;
+	line-height: 1.2;
+	font-weight: 400;
+	margin-left: auto;
+}
+
+.info__specialist {
+	max-width: 600px;
+	color: #ffffff;
+	font-size: 36px;
+	line-height: 1.2;
+	font-weight: 500;
+	margin-right: auto;
+
+	&--hide {
+		display: none;
+	}
+}
+
+.info__specialist-name--hide {
+	display: none;
+}

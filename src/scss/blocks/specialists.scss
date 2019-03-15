@@ -1,0 +1,115 @@
+.specialists {
+	padding-right: 240px;
+	padding-left: 30px;
+	position: relative;
+}
+
+.specialists__list {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0px 2px;
+	table-layout: fixed;
+}
+
+.specialists__list {
+	thead {
+		display: block;
+	}
+
+	tbody {
+		display:block;
+	  width: 100%;
+	  overflow: auto;
+	  height: 840px;
+	}
+}
+
+
+.specialists__list tbody::-webkit-scrollbar { 
+  display: none; 
+}
+
+.specialists__doctor,
+.specialists__record,
+.specialists__sector,
+.specialists__room {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 27px;
+	padding-bottom: 11px;
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: 500;
+	text-align: left;
+	vertical-align: bottom;
+}
+
+.specialists__name,
+.specialists__time,
+.specialists__area,
+.specialists__number {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #004b53;
+	font-size: 21px;
+	line-height: 1.2;
+	font-weight: 500;
+	text-align: left;
+}
+
+.specialists__doctor,
+.specialists__name {
+	width: 485px;
+}
+
+.specialists__record,
+.specialists__time {
+	width: 290px;
+}
+
+.specialists__sector,
+.specialists__area {
+	width: 115px;
+}
+
+.specialists__room,
+.specialists__number {
+	width: 120px;
+}
+
+.specialists__person {
+	background-color: #64ffda;
+
+	&--unavailable {
+		background-color: #ffccbc;
+	}
+}
+
+.specialists__person--local .specialists__name {
+	padding-top: 15px;
+	position: relative;
+	padding-bottom: 40px;
+}
+
+.specialists__person--local .specialists__name::after {
+	content: "Ваш участковый врач";
+	position: absolute;
+	padding: 2px 4px;
+	font-size: 16px;
+	line-height: 1.2;
+	color: #000000;
+	font-weight: 400;
+	bottom: 14px;
+	left: 20px;
+	background-color: #ffeb3b;	
+	border-radius: 4px;
+}
+
+.specialists__search {
+	position: absolute;
+	right: 20px;
+	top: 65px;
+}

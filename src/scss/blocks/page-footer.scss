@@ -1,0 +1,19 @@
+.page-footer {
+	background-color: #004b53;
+	text-align: right;
+
+	&--number {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+}
+
+.page-footer__inner {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.page-footer--number {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
