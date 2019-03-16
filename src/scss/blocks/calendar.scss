@@ -17,25 +17,22 @@
 	width: 100px;
 	height: 100px;
 	margin-left: 2px;
-}
-
-.calendar__next {
 	position: relative;
 	background-color: #00bfa5;
 	text-indent: -10000px;
-}
-
-.calendar__next::before {
-	content: "";
-	position: absolute;
-	width: 15px;
-	height: 15px;
-	left: calc(50% - 10px);
-	top: calc(50% - 10px);
-	border: 3.5px solid #ffffff;
-	border-top: none;
-	border-right: none;
-	transform: rotate(-135deg);
+	
+	&::before {
+		content: "";
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		left: calc(50% - 10px);
+		top: calc(50% - 10px);
+		border: 3.5px solid #ffffff;
+		border-top: none;
+		border-right: none;
+		transform: rotate(-135deg);
+	}
 }
 
 .calendar__list {
@@ -175,4 +172,8 @@
 	color: #ffffff;
 	font-style: italic;
 	font-weight: 400;
+}
+
+.calendar__info-day {
+	color: rgba(255, 255, 255, 0.5);
 }
